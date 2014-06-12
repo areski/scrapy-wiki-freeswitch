@@ -1,0 +1,10 @@
+strict graph  {
+	graph [encoding="UTF-8"];
+	node [label="\N"];
+	1	 [label="plain string"];
+	1 -- "Здравствуйте!" [key="До свидания"];
+1 -- こんにちは;
+2 [label=unicode];
+3 [label="Здравствуйте!"];
+שלום -- "Здравствуйте!";
+}
