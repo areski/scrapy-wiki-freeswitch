@@ -14,4 +14,4 @@ NEWSPIDER_MODULE = 'wikispider.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'wikispider (+http://www.yourdomain.com)'
 
-# DEPTH_LIMIT = 1
+DEPTH_LIMIT = 1

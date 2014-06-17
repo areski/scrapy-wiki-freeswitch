@@ -11,8 +11,17 @@ class WikiSpider(CrawlSpider):
     pcounter = 0
     name = "wiki"
     allowed_domains = ["freeswitch.org"]
+    # start_urls = [
+    #     "http://wiki.freeswitch.org/"
+    # ]
     start_urls = [
-        "http://wiki.freeswitch.org/"
+        "http://wiki.freeswitch.org/index.php?title=Special:AllPages&from=.1.3.6.1.4.1.27880&to=FS_weekly_2010_11_10",
+        "http://wiki.freeswitch.org/index.php?title=Special:AllPages&from=FS_weekly_2010_11_17&to=Java_ESL_Client",
+        "http://wiki.freeswitch.org/index.php?title=Special:AllPages&from=Javascript&to=Mod_managed",
+        "http://wiki.freeswitch.org/index.php?title=Special:AllPages&from=Mod_memcache&to=Report_Issue_Checklist",
+        "http://wiki.freeswitch.org/index.php?title=Special:AllPages&from=Reporting_Bugs&to=Variable_execute_on_tone_detect",
+        "http://wiki.freeswitch.org/index.php?title=Special:AllPages&from=Variable_export_vars&to=Variable_stream_prebuffer",
+        "http://wiki.freeswitch.org/index.php?title=Special:AllPages&from=Variable_suppress-cng&to=Zeroconf.conf.xml"
     ]
 
     # rules = (
