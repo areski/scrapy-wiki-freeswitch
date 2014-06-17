@@ -14,7 +14,7 @@ from sets import Set
 from pprint import pprint
 import csv
 
-json_data = open('items_specialall.json')
+json_data = open('items_specialall2.json')
 
 data = json.load(json_data)
 data_unique = []

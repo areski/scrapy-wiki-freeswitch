@@ -36,8 +36,8 @@ class WikiSpider(CrawlSpider):
 
     rules = [
         # Rule(SgmlLinkExtractor(allow=('category\.php', ), deny=('subsection\.php', ))),
-
-        Rule(SgmlLinkExtractor(allow=[r'wiki/\w+'], deny=[r'wiki/[Special:|User_talk:|User:|Talk:]\w+']), callback='parse_item', follow=True),
+        Rule(SgmlLinkExtractor(allow=[r'wiki/\w+']), callback='parse_item', follow=True),
+        # Rule(SgmlLinkExtractor(allow=[r'wiki/\w+'], deny=[r'wiki/[Special\:|User_talk\:|User\:|Talk\:]\w+']), callback='parse_item', follow=True),
     ]
         # r'page/\d+' : regular expression for http://isbullsh.it/page/X URLs
 
